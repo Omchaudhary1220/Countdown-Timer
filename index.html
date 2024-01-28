@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <span style="color:yellow">COUNTDOWN</span>
+        <span style="color:white">TIMER</span>
+    </div>
+    <p id="time_up_message">Time up</p>
+    <audio id="time_up">
+        <source src="TimeupSound.mp3" type="audio/mpeg">
+    </audio>
+    <div class="container">
+        <div class="counter">
+            <span id="hours">00</span>
+            <span>:</span>
+            <span id="minutes">00</span>
+            <span>:</span>
+            <span id="seconds">00</span>
+        </div>
+        <div class="buttons">
+            <button id="start_butt" onclick="StartCounter()">Start</button>
+            <button id="stop_butt" onclick="StopCounter()">Stop</button>
+            <button id="reset_butt" onclick="reset()">Reset</button>
+        </div>
+    </div>
+    <form class="limit">
+        <label for="limit_val">Set own Limits in minute</label>
+        <br>
+        <input id="limit_val" type="number" min="1">
+        <button id="submit_butt" type="submit" onclick="setlimit()">Submit</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>

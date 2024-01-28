@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(34, 34, 99);
+}
+
+.hide {
+    visibility:hidden;
+}
+
+.header {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 8vmin;
+    margin-top: 2vmin;
+    font-weight: bold;
+}
+
+.container {
+    height: 40vmin;
+    width: 80vmin;
+    margin: auto;
+    margin-top: 10vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(159, 146, 146, 0.5);
+    border-radius: 0.5vmin;
+}
+
+.counter {
+    font-size: 12vmin;
+    color: white;
+}
+
+.counter span {
+    margin-left: -2vmin;
+}
+
+.buttons button {
+    background-color: red;
+    font-size: 3vmin;
+    padding: 1vmin;
+    border: none;
+    border-radius: 1vmin;
+    margin-left: 1vmin;
+    cursor: pointer;
+}
+
+.limit {
+    width: 60vmin;
+    height: 15vmin;
+    margin: auto;
+    margin-top: 5vmin;
+    padding: 1vmin;
+    line-height: 5vmin;
+    font-size: 3vmin;
+    border-radius: 1vmin;
+    color: white;
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgb(226, 130, 130) 50%, rgb(199, 165, 119) 100%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#limit_val {
+    height: 3vmin;
+    width: 70%;
+    border: 0.3vmin solid blue;
+    border-radius: 2vmin;
+    padding: 1vmin;
+}
+
+#submit_butt {
+    height: 4vmin;
+    width: 10vmin;
+    background-color: red;
+    border-radius: 1vmin;
+    font-weight: bold;
+    font-size: 2vmin;
+}
+
+#time_up_message {
+    margin: auto;
+    text-align: center;
+    margin-top: 5vmin;
+    width: 60vmin;
+    font-size: 5vmin;
+    padding: 1vmin;
+    border-bottom: 0.5vmin solid red;
+    color: white;
+}
